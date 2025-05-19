@@ -1,0 +1,41 @@
+/*-------------------------------------------
+companyページ / company.html
+-------------------------------------------*/
+@use 'setting' as s;
+/* ここから記述します。 */
+.company-inner{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 120px;
+    @media screen and (max-width:900px){
+        flex-direction: column;
+    }
+}
+.map{
+    width: 50%;
+    @media screen and (max-width:900px){
+        width: 100%;
+    }
+}
+
+.company-iframe{
+    width: 100%;
+    height: 100%;
+}
+.company-list{
+    width: 45%;
+    @media screen and (max-width:900px){
+     width: 100%;   
+    }
+}
+.company-item{
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+.company-list dt{
+width: 30%;
+font-weight: normal;
+}

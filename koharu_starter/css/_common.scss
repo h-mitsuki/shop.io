@@ -1,0 +1,61 @@
+/*-------------------------------------------
+共通クラス
+-------------------------------------------*/
+@use 'setting' as s;
+
+body {
+    font-family: "Hiragino Mincho Pro", "Hiragino Mincho ProN", "Yu Mincho", YuMincho, HGS明朝E, メイリオ, Meiryo, serif;
+    letter-spacing: .1em;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 100%;
+}
+
+a:hover {
+	opacity: 0.85;
+	transition: 0.3s;
+}
+
+.body {
+	background: s.$colorBlack;
+}
+
+.main {
+	position: relative;
+}
+
+/*-------------------------------------------
+共通パーツの指定
+-------------------------------------------*/
+.u-wrapper {
+	width: 100%;
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 0 40px;
+
+	@include s.mq(tab) {
+		padding: 0px 15px;
+	}
+}
+/* ここから記述します。 */
+.section-title{
+	color:#fff ;
+	font-size: 32px;
+	position: relative;
+	margin-bottom: 32px;
+	@media screen and (max-width:500px){
+        font-size: 25px;
+    }
+}
+
+.section-title span{
+display: block;
+position: absolute;
+top: 20px;
+	width: 40px;
+	background-color: #fff;
+	height: 1px;
+
+}

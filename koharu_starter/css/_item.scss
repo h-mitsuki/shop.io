@@ -1,0 +1,48 @@
+/*-------------------------------------------
+itemページ / item*.html
+-------------------------------------------*/
+@use 'setting' as s;
+/* ここから記述します。 */
+.item{
+    display: flex;
+    gap: 48px;
+    margin-bottom: 120px;
+   justify-content: center;
+   align-items: center;
+}
+
+.item-contents{
+    color: #fff;
+padding:68px 0 ;
+}
+.items-title{
+    font-size: 36px;
+    margin-bottom: 24px;
+}
+
+.price{
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+.small-text{
+    font-size: 15px;
+}
+.item-contents p{
+    margin-bottom:16px ;
+}
+.item-btn{
+    background-color:#BA0808 ;
+    color: #fff;
+    width: 240px;
+    height: 50px;
+    margin-bottom: 48px;
+    text-align: center;
+    padding:17px 19px;
+}
+.item-number{
+width: 160px;
+height: 40px;
+background: #fff;
+margin-bottom: 10px;
+}
+  

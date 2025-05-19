@@ -1,0 +1,29 @@
+/*-------------------------------------------
+productsページ / products.html
+-------------------------------------------*/
+@use 'setting' as s;
+/* ここから記述します。 */
+
+.product-list{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 35px;
+    color: #fff;
+    margin-bottom: 120px;
+
+    @media screen and (max-width:900px){
+        grid-template-columns: repeat(2,1fr);
+        gap: 28px 8px;
+    }
+}
+
+.popular-list{
+    display: grid;
+    gap: 35px;
+ grid-template-columns: repeat(3,1fr);
+ color: #fff;
+ margin-bottom: 120px;
+ @media screen and (max-width:900px){
+        grid-template-columns: repeat(1,1fr);
+ }
+}
